@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/health', (req, res) => {
+    console.log()
     res.json({ message: "Backend is healthy!" });
 });
 
