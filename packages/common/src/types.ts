@@ -11,4 +11,4 @@ const signInSchema = z.object({
     password: z.string().min(8)
 });
 
-export default { signUpSchema, signInSchema };
+export { signUpSchema, signInSchema };
