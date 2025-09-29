@@ -17,7 +17,7 @@ model User {
   id Int @default(autoincrement())
   unique_id String @id @default(uuid())
   username String
-  email String
+  email String  @unique
   password String
   profile_picture String?
   room Room[]
