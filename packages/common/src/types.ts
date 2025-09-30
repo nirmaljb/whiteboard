@@ -11,4 +11,8 @@ const signInSchema = z.object({
     password: z.string().min(8)
 });
 
-export { signUpSchema, signInSchema };
+const roomSchema = z.object({
+    slug: z.string().min(3)
+})
+
+export { signUpSchema, signInSchema, roomSchema };
